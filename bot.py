@@ -18,7 +18,7 @@ def error(bot, update, error):
 u = Updater(os.environ['TELEGRAM_TOKEN'])
 d = u.dispatcher
 d.add_handler(CommandHandler('start', start))
-d.add_handler(MessageHandler(Filters.text&Filters.private, message))
+d.add_handler(MessageHandler(Filters.text&Filters.private&(~Filters.reply), message))
 d.add_error_handler(error)
 
 u.start_polling()
