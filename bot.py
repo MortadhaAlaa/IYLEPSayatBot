@@ -10,7 +10,7 @@ def start(bot, update):
 
 def message(bot, update):
     bot.send_message(chat_id='-273378117', text=update.message.text)
-    bot.send_message(chat_id=update.message.chat_id, text='تم ايصال رسالتك بصورة مجهولة\nهسة اصبر واذا رسالتك فيطية محد يجاوبك')
+    bot.send_message(chat_id=update.message.chat_id, text='تم ايصال رسالتك بصورة مجهولة\nهسة اصبر واذا رسالتك سخيفة محد يجاوبك')
     bot.forward_message(chat_id='-253860529', from_chat_id=update.message.chat_id, message_id=update.message.message_id)
 
 def error(bot, update, error):
