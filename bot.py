@@ -6,11 +6,13 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 
 def start(bot, update):
-    bot.send_message(chat_id=update.message.chat_id, text='كول اللي ببالك واصبر شوية واحنة نجاوبك')
+    bot.send_message(chat_id=update.message.chat_id, text='مرحبا ب بوت السايات الخاص بلايلب..🔥\nاكتب السؤال الي تحب تسألة ، حيوصل للالومناي بصورة مجهولة! \nويتم الرد عليه باقرب وقت بلقناة❤️')
 
 def message(bot, update):
+    if update.message.chat_id == '-273378117':
+        return
     bot.send_message(chat_id='-273378117', text=update.message.text)
-    bot.send_message(chat_id=update.message.chat_id, text='تم ايصال رسالتك بصورة مجهولة\nهسة اصبر واذا رسالتك سخيفة محد يجاوبك')
+    bot.send_message(chat_id=update.message.chat_id, text='تم ارسال رسالتك بصورة مجهولة،\nانتظر الجواب قريبا على القناة ❤️..')
     bot.forward_message(chat_id='-253860529', from_chat_id=update.message.chat_id, message_id=update.message.message_id)
 
 def error(bot, update, error):
