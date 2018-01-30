@@ -9,7 +9,7 @@ def start(bot, update):
     bot.send_message(chat_id=update.message.chat_id, text='مرحبا ب بوت السايات الخاص بلايلب..🔥\nاكتب السؤال الي تحب تسألة ، حيوصل للالومناي بصورة مجهولة! \nويتم الرد عليه باقرب وقت بلقناة❤️')
 
 def message(bot, update):
-    bot.send_message(chat_id='-273378117', text=update.message.text)
+    bot.send_message(chat_id='-1001215024679', text=update.message.text)
     bot.send_message(chat_id=update.message.chat_id, text='تم ارسال رسالتك بصورة مجهولة،\nانتظر الجواب قريبا على القناة ❤️..')
     bot.forward_message(chat_id='-253860529', from_chat_id=update.message.chat_id, message_id=update.message.message_id)
 
